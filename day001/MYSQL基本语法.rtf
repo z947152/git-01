@@ -1,0 +1,189 @@
+{\rtf1\ansi\ansicpg936\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\colortbl ;\red158\green124\blue124;\red155\green0\blue211;\red0\green77\blue187;}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\cf1\b\f0\fs24\lang2052 DDL create(\'b4\'b4\'bd\'a8) \cf0\par
+\par
+\tab create database (\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'c2\'df\'bc\'ad\'ca\'fd\'be\'dd\'bf\'e2)\par
+\par
+\tab create table(\'b4\'b4\'bd\'a8\'d2\'bb\'b8\'f6\'b1\'ed)\par
+\par
+    \cf1 alter(\'d0\'de\'b8\'c4)\cf0\par
+\par
+\tab alter table \'b1\'ed\'c3\'fb add (\'cc\'ed\'bc\'d3\'d2\'bb\'c1\'d0)\par
+\par
+\tab alter table \'b1\'ed\'c3\'fb modify \'c1\'d0\'c3\'fb \'b3\'a4\'b6\'c8\'a3\'bb(\'d0\'de\'b8\'c4\'c0\'e0\'d0\'cd\'b3\'a4\'b6\'c8)\par
+\par
+\tab alter table \'b1\'ed\'c3\'fb change \'be\'c9\'c1\'d0\'c3\'fb \'d0\'c2\'c1\'d0\'c3\'fb \'ca\'fd\'be\'dd\'c0\'e0\'d0\'cd\'a3\'a8\'d0\'de\'b8\'c4\'c1\'d0\'c3\'fb\'a3\'a9\par
+\par
+\tab alter table \'b1\'ed\'c3\'fb drop \'c9\'be\'b3\'fd\'c1\'d0\'a3\'bb\par
+\par
+\tab raname table \'b1\'ed\'c3\'fb to \'d0\'c2\'b1\'ed\'c3\'fb\'a3\'bb\par
+\par
+\cf1     drop(\'c9\'be\'b3\'fd)\par
+\cf0\par
+\tab drop database \'ca\'fd\'be\'dd\'bf\'e2\'c3\'fb(\'c9\'be\'b3\'fd\'ca\'fd\'be\'dd\'bf\'e2)\par
+\tab drop table \'b1\'ed\'c3\'fb(\'c9\'be\'b3\'fd\'b1\'ed);\par
+\par
+    show(\'b2\'e9\'bf\'b4)\par
+\par
+\tab show databases; \'b2\'e9\'bf\'b4\'c2\'df\'bc\'ad\'ca\'fd\'be\'dd\'bf\'e2\'c3\'fb\'a3\'bb\par
+    \tab show tables ; \'b2\'e9\'bf\'b4\'b1\'ed\'c3\'fb\'a3\'bb\par
+\par
+    use(\'c7\'d0\'bb\'bb)\par
+\par
+\tab use \'ca\'fd\'be\'dd\'bf\'e2\'c3\'fb\par
+   \par
+\cf2 DML insert(\'cc\'ed\'bc\'d3)\par
+\cf0\par
+\tab insert into \'b1\'ed\'c3\'fb values(...);\par
+\par
+\tab insert into \'b1\'ed\'c3\'fb(\'d7\'d6\'b6\'ce..) values(\'d6\'b5...);\par
+\par
+\tab\cf2 update(\'d0\'de\'b8\'c4)\cf0\par
+\par
+\tab update \'b1\'ed\'c3\'fb set \'d7\'d6\'b6\'ce = \'d6\'b5 where \'d7\'d6\'b6\'ce = \'d6\'b5\'a3\'bb\par
+\par
+\tab\cf2 delete(\'c9\'be\'b3\'fd)\cf0\par
+\par
+\tab delete from \'b1\'ed\'c3\'fb where \'cc\'f5\'bc\'fe\'a3\'bb\par
+\par
+\cf3 DQl select(\'b2\'e9\'d1\'af)\par
+\par
+\'b5\'a5\'b1\'ed\'b2\'e9\'d1\'af\'a3\'ba\par
+\cf0\par
+\cf3\tab 1.\'bc\'f2\'b5\'a5\'b2\'e9\'d1\'af\'a3\'ba\cf0\par
+\par
+\tab select database();\par
+\par
+\tab select * from \'b1\'ed\'c3\'fb(\'b2\'e9\'d1\'af\'b1\'ed\'b5\'c4\'cb\'f9\'d3\'d0\'c4\'da\'c8\'dd)\'a3\'bb\par
+\par
+\tab select \'c1\'d0\'c3\'fb ..from \'b1\'ed\'c3\'fb\'a3\'bb(\'b2\'e9\'d1\'af\'b2\'bf\'b7\'d6\'d7\'d6\'b6\'ce)\'a3\'bb\par
+\par
+\tab select \'c1\'d0\'c3\'fb as \'b1\'f0\'c3\'fb from \'b1\'ed\'c3\'fb;(\'b8\'f8\'d7\'d6\'b6\'ce\'c6\'f0\'b1\'f0\'c3\'fb)\'a3\'bb\par
+\par
+\tab select distinct \'c1\'d0\'c3\'fb from \'b1\'ed\'c3\'fb;(\'c8\'a5\'b5\'f4\'d6\'d8\'b8\'b4\'d6\'b5)\'a3\'bb\par
+\par
+\tab select \'c1\'d0\'c3\'fb1+100 from \'b1\'ed\'c3\'fb;(\'b6\'d4\'c1\'d0\'d6\'b5\'bd\'f8\'d0\'d0\'d4\'cb\'cb\'e3)\'a3\'bb\par
+\par
+\cf3\tab 2.\'cc\'f5\'bc\'fe\'b2\'e9\'d1\'af:\cf0\par
+\par
+\cf3\tab  \'b1\'c8\'bd\'cf\'d4\'cb\'cb\'e3\'b7\'fb\cf0 :(>,<,>=,<=)\'ca\'ca\'d3\'c3\'d3\'da"\'ca\'fd\'d6\'b5\'c0\'e0\'d0\'cd","\'c8\'d5\'c6\'da\'c0\'e0\'d0\'cd"\'a3\'bb\par
+\tab  \tab     (=,!=,<>)\'a3\'ba\'ca\'ca\'d3\'c3\'d3\'da\ldblquote\'ca\'fd\'d6\'b5\'c0\'e0\'d0\'cd\rdblquote\'a3\'ac\ldblquote\'c8\'d5\'c6\'da\'c0\'e0\'d0\'cd\rdblquote\'a3\'ac\ldblquote\'ce\'c4\'b1\'be\'c0\'e0\tab\'d0\'cd\rdblquote\'a3\'bb\par
+\par
+\tab\'ca\'b5\'c0\'fd select *from \'b1\'ed\'c3\'fb where \'c1\'d0\'c3\'fb \'d4\'cb\'cb\'e3\'b7\'fb \'d6\'b5;\par
+\par
+\cf3\tab 3.\'c2\'df\'bc\'ad\'d4\'cb\'cb\'e3\'b7\'fb\cf0 :\'b2\'a2\'c7\'d2(and),\'bb\'f2\'d5\'df(or)\par
+\par
+\tab\'ca\'b5\'c0\'fd\'a3\'baselect * from \'b1\'ed\'c3\'fb where \'c1\'d0\'c3\'fb= \'d6\'b5 (or\'bb\'f2\'d5\'dfand) \'c1\'d0\'c3\'fb =\'d6\'b5;\par
+\tab  \'cf\'e0\'b5\'b1\'d3\'eb(not)\par
+\tab\'ca\'b5\'c0\'fd:select * from \'b1\'ed\'c3\'fb where not \'c1\'d0\'c3\'fb = \'d6\'b5;\par
+\par
+\tab\cf3 4.\'b7\'b6\'ce\'a7\'b2\'e9\'d1\'af\cf0 :between..(\'d0\'a1\'d6\'b5,\'b0\'fc\'ba\'ac)and..(\'b4\'f3\'d6\'b5\'a3\'ac\'b0\'fc\'ba\'ac)\'ca\'ca\'d3\'c3\'d3\'da:\ldblquote\'ca\'fd\'d6\'b5\'c0\'e0\tab\'d0\'cd\rdblquote\'ba\'cd\ldblquote\'c8\'d5\'c6\'da\'c0\'e0\'d0\'cd\rdblquote\'a3\'bb\par
+\tab\'ca\'b5\'c0\'fd:select * from \'b1\'ed\'c3\'fb where \'c1\'d0\'c3\'fb between \'d6\'b51 and \'d6\'b52;\par
+\tab\par
+\tab\cf3 5.IN\'d3\'ef\'be\'e4\cf0 :\'b6\'e0\'b8\'f6\'d6\'b5\'b5\'c4\'b5\'c8\'d0\'d4\'c5\'d0\'b6\'cf\par
+\tab\'ca\'b5\'c0\'fd:select * from \'b1\'ed\'c3\'fb where \'c1\'d0\'c3\'fb in (\'d6\'b51,\'d6\'b52);\par
+\tab\par
+\tab\cf3 6.Like\'d3\'ef\'be\'e4\cf0 :\'c4\'a3\'ba\'fd\'b2\'e9\'d1\'af(\'cd\'a8\'c5\'e4\'b7\'fb:_(\'d2\'bb\'b8\'f6\'b3\'a4\'b6\'c8\'b5\'c4\'d7\'d6\'b7\'fb) %(\'c8\'ce\'d2\'e2\'b3\'a4\'b6\'c8\'b5\'c4\'cd\'a8\'c5\'e4\tab\'b7\'fb))\'a3\'bb\par
+\tab select * from \'b1\'ed\'c3\'fb where \'c1\'d0\'c3\'fb like \'cd\'a8\'c5\'e4\'b7\'fb\'ba\'cd\'d6\'b5\'a3\'bb\par
+\tab\par
+\tab\cf3 7 IS null\cf0 : \'b2\'e9\'d1\'af\ldblquote\'bf\'d5\rdblquote\'a3\'ac\par
+\tab select * from \'b1\'ed\'c3\'fb where \'c1\'d0\'c3\'fb is null;\par
+\tab\par
+\tab\cf3 SQL\'b2\'e9\'d1\'af\'c5\'c5\'d0\'f2\'a3\'ba\cf0\par
+\tab\'d3\'ef\'b7\'a8\'a3\'baselect .. from ... where ... order by \'c5\'c5\'d0\'f2\'d7\'d6\'b6\'ce asc(\'c9\'fd\'d0\'f2-\'c4\'ac\tab\'c8\'cf)/desc(\'bd\'b5\'d0\'f2);\par
+\par
+\tab\cf3 8.\'b6\'d4\'b6\'e0\'c1\'d0\'bd\'f8\'d0\'d0\'c5\'c5\'d0\'f2\'a3\'ba\cf0\par
+\tab select * from \'b1\'ed\'c3\'fb order by \'c1\'d0\'c3\'fb1 \'a3\'ac\'c1\'d0\'c3\'fb2 desc;\par
+\tab\par
+\tab\cf3 SQL\'b2\'e9\'d1\'af \'be\'db\'ba\'cf\'ba\'af\'ca\'fd:\cf0\par
+\tab 1.count(\'d7\'d6\'b6\'ce\'c3\'fb):\'cd\'b3\'bc\'c6\'d6\'b8\'b6\'a8\'c1\'d0\'b2\'bb\'ce\'aanull\'b5\'c4\'d0\'d0\'ca\'fd\'a3\'bb\par
+\tab 2.sum(\'d7\'d6\'b6\'ce\'c3\'fb): \'bc\'c6\'cb\'e3\'d6\'b8\'b6\'a8\'c1\'d0\'b5\'c4\'ca\'fd\'d6\'b5\'ba\'cd\'a3\'bb\par
+\tab 3.max (\'d7\'d6\'b6\'ce\'c3\'fb):\'bc\'c6\'cb\'e3\'d6\'b8\'b6\'a8\'c1\'d0\'b5\'c4\'d7\'ee\'b4\'f3\'d6\'b5\'a3\'ac\'c8\'e7\'b9\'fb\'d6\'b8\'b6\'a8\'c1\'d0\'ca\'c7\'d7\'d6\'b7\'fb\'b4\'ae\'c0\'e0\'d0\'cd\'a3\'ac\'c4\'c7\'c3\'b4\'ca\'b9\tab\'d3\'c3\'d7\'d6\'b7\'fb\'b4\'ae\'c5\'c5\'d0\'f2\'d4\'cb\'cb\'e3\'a3\'ac\'bf\'c9\'d2\'d4\'b2\'e9\ldblquote\'c8\'d5\'c6\'da\'c0\'e0\'d0\'cd\rdblquote\par
+\tab 4.min(\'d7\'d6\'b6\'ce\'c3\'fb): \'bc\'c6\'cb\'e3\'d6\'b8\'b6\'a8\'c1\'d0\'b5\'c4\'d7\'ee\'d0\'a1\'d6\'b5\'a3\'ac\par
+\tab 5.avg(\'d7\'d6\'b6\'ce\'c3\'fb): \'cb\'e3\'d6\'b8\'b6\'a8\'b5\'c4\'c6\'bd\'be\'f9\'d6\'b5\'a3\'ac\'c8\'e7\'b9\'fb\'d6\'b8\'b6\'a8\'c0\'e0\'d0\'cd\'b2\'bb\'ca\'c7\'ca\'fd\'d6\'b5\'c0\'e0\'d0\'cd\'a3\'ac\'bc\'c6\'cb\'e3\'bd\'e1\'b9\'fb\tab\'ce\'aa0\'a3\'bb\par
+\tab\'d7\'a2\'d2\'e2:\par
+\tab  1).\ldblquote\'be\'db\'ba\'cf\'ba\'af\'ca\'fd\rdblquote\'b5\'c4\'b2\'e9\'d1\'af\'bd\'e1\'b9\'fb\'a3\'ac\'d3\'a6\'b8\'c3\'d6\'bb\'b0\'fc\'ba\'ac\ldblquote\'be\'db\'ba\'cf\'ba\'af\'ca\'fd\'b5\'c4\'bd\'e1\'b9\'fb\'c1\'d0\rdblquote\'a3\'ac\'b2\'bb\'b0\'fc\tab\'c0\'a8\'c6\'e4\'cb\'fc\'b7\'d6\'d7\'e9\'c1\'d0(\'c8\'e7\'b9\'fb\'d3\'d0\'b7\'d6\'d7\'e9\'c1\'d0\'a3\'ac\'bb\'b9\'bf\'c9\'d2\'d4\'b0\'fc\'ba\'ac\'b7\'d6\'d7\'e9\'c1\'d0)\'a3\'ac\'b7\'f1\'d4\'f2\'d2\'b2\'ca\'c7\'ce\'de\'d2\'e2\'d2\'e5\'a1\'a3\par
+\tab\'d2\'f2\'ce\'aa\ldblquote\'be\'db\'ba\'cf\'ba\'af\'ca\'fd\rdblquote\'b5\'c4\'bd\'e1\'b9\'fb\'ca\'c7\'d2\'bb\'b8\'f6\'bc\'c6\'cb\'e3\'ba\'f3\'b5\'c4\'bd\'e1\'b9\'fb\'a3\'ac\'b2\'bb\'ca\'c7\'b4\'d3\'b1\'ed\'d6\'d0\'b2\'e9\'d1\'af\'b3\'f6\'c0\'b4\'b5\'c4\'bd\'e1\tab\'b9\'fb\'a3\'ac\'cb\'f9\'d2\'d4\'cd\'ac\'b1\'ed\'d6\'d0\'c8\'ce\'ba\'ce\'d2\'bb\'cc\'f5\'bc\'c7\'c2\'bc\'b6\'bc\'c3\'bb\'d3\'d0\'b9\'d8\'cf\'b5\'a3\'ac\'cb\'e4\'c8\'bb\'bf\'c9\'c4\'dc\'cd\'ac\'c4\'b3\'b8\'f6\'bc\'c7\'c2\'bc\par
+\tab\'cf\'e0\'cd\'ac\'a3\'ac\'b5\'ab\'b2\'a2\'b2\'bb\'ca\'c7\'c4\'c7\'cc\'f5\'bc\'c7\'c2\'bc\'a1\'a3\par
+\par
+\cf3\tab SQl \'b2\'e9\'d1\'af \'b7\'d6\'d7\'e9\cf0 :group by ;\par
+\tab\'ca\'b5\'c0\'fd select \'be\'db\'ba\'cf\'ba\'af\'ca\'fd\'a3\'ac\'c1\'d0\'c3\'fb1 from \'b1\'ed\'c3\'fb group by \'c1\'d0\'c3\'fb1\'a3\'bb\par
+\tab\par
+\cf3\tab SQL \'b2\'e9\'d1\'af having\'d3\'ef\'be\'e4\cf0 : \'b6\'d4\'be\'db\'ba\'cf\'ba\'af\'ca\'fd\'b5\'c4\'bd\'e1\'b9\'fb\'bd\'f8\'d0\'d0\'c9\'b8\'d1\'a1\'b5\'c4\'a1\'a3\'d2\'f2\'ce\'aawhere\'b2\'bb\'c4\'dc\'b6\'d4\tab\'be\'db\'ba\'cf\'ba\'af\'ca\'fd\'b5\'c4\'bd\'e1\'b9\'fb\'c9\'b8\'d1\'a1\'a1\'a3\par
+\tab\'ca\'b5\'c0\'fd select \'be\'db\'ba\'cf\'ba\'af\'ca\'fd\'a3\'ac\'c1\'d0\'c3\'fb1 from \'b1\'ed\'c3\'fb group by \'c1\'d0\'c3\'fb having \tab max(price)>1000;\par
+\tab\par
+\tab SQL\'b2\'e9\'d1\'af\'d3\'ef\'d1\'d4\'d6\'b4\'d0\'d0\'cb\'b3\'d0\'f2:\par
+\tab select...from...where...group by ..having ..order by ...;\par
+\tab\'d6\'b4\'d0\'d0\'cb\'b3\'d0\'f2 1.from  2.where 3.group by 4.\'be\'db\'ba\'cf\'ba\'af\'ca\'fd 5.having 6.select \tab 7.order by;\par
+\par
+\cf3\'b6\'e0\'b1\'ed\'b2\'e9\'d1\'af_\'c4\'da\'c1\'ac\'bd\'d3\par
+\par
+\tab\'d2\'fe\'ca\'bd\'c4\'da\'c1\'ac\'bd\'d3\par
+\par
+\cf0\tab\'b8\'f1\'ca\'bd\'a3\'ba\fs22 select \'d7\'d6\'b6\'ce\'c1\'d0\'b1\'ed from \'b1\'ed1,\'b1\'ed2 where \'c1\'bd\'b8\'f6\'b1\'ed\'b5\'c4\'b5\'c8\'d6\'b5\'cc\'f5\'bc\'fe\'a3\'bb\par
+\tab\par
+\tab\'cb\'b5\'c3\'f7\'a3\'ba\par
+\tab\par
+
+\pard\sa200\sl240\slmult1\tab 1).\'c9\'cf\'c3\'e6\'b5\'c4\'a3\'ba\'b1\'ed\'c3\'fb.\'c1\'d0\'c3\'fb \'d0\'ce\'ca\'bd\'a3\'ba\'ca\'c7\ldblquote\'b1\'ed\'c3\'fb\'cf\'de\'b6\'a8\rdblquote\'b5\'c4\'d0\'ce\'ca\'bd\'a1\'a3\'d5\'e2\'d6\'d6\'d0\'ce\'ca\'bd\'b2\'bb\tab\'ca\'c7\'b1\'d8\'d0\'eb \tab\'b5\'c4\'a3\'ac\'c8\'e7\'b9\'fb\'c1\'bd\'b8\'f6\'b1\'ed\'d6\'d0\'c3\'bb\'d3\'d0\'d6\'d8\'c3\'fb\'b5\'c4\'c1\'d0\'a3\'ac\'bf\'c9\'d2\'d4\'b2\'bb\'d3\'c3\'b1\'ed\'c3\'fb\'cf\'de\'b6\'a8\'a3\'bb\'b5\'ab\'c8\'e7\'b9\'fb\'d3\'d0\'d6\'d8\'c3\'fb\'b5\'c4\tab\'c1\'d0\'a3\'ac\'b1\'d8\tab\'d0\'eb\'d2\'aa\'ca\'b9\'d3\'c3\'b1\'ed\'c3\'fb\par
+\tab 2).from\'ba\'f3\'c3\'e6\'b5\'c4\'c1\'bd\'b8\'f6\'b1\'ed\'b5\'c4\'cb\'b3\'d0\'f2\'a3\'ba\'cb\'e6\'d2\'e2where\'b5\'c8\'d6\'b5\'cc\'f5\'bc\'fe\'d6\'d0\'b5\'c4\'cb\'b3\'d0\'f2\'a3\'ba\'cb\'e6\'d2\'e2\par
+
+\pard\tab 3).select\'ba\'f3\'c3\'e6\'bf\'c9\'d2\'d4\'d1\'a1\'d4\'f1\'c1\'bd\'b8\'f6\'d6\'d0\'b5\'c4\'c8\'ce\'d2\'e2\'d7\'d6\'b6\'ce\'a3\'ba\par
+\par
+
+\pard\sa200\sl240\slmult1\tab 4).\'c8\'e7\'b9\'fb\'ca\'b9\'d3\'c3\ldblquote\'b1\'ed\'c3\'fb\'cf\'de\'b6\'a8\rdblquote\'ca\'b1\'a3\'ac\'b1\'ed\'c3\'fb\'cc\'ab\'b3\'a4\'a3\'ac\'d0\'b4\'b3\'f6\'c0\'b4\'ba\'dc\'c2\'e9\'b7\'b3\'a3\'ac\'bf\'c9\'d2\'d4\'ca\'b9\'d3\'c3\ldblquote\'b1\'ed\'b1\'f0\'c3\'fb\rdblquote\par
+\cf3\fs24\tab\fs22 2).\'cf\'d4\'ca\'be\'c4\'da\'c1\'ac\'bd\'d3\'a3\'ba\par
+\cf0\tab\'b8\'f1\'ca\'bd\'a3\'baselect * from \'b1\'ed1 INNER JOIN \'b1\'ed2 ON \'b1\'ed1\'ba\'cd\'b1\'ed2\'b5\'c4\'b5\'c8\'d6\'b5\'b9\'d8\'cf\'b5\'a3\'bb\par
+
+\pard\cf3\fs24\tab\'c1\'bd\'d6\'d6\'c1\'ac\'bd\'d3\'b5\'c4\'cb\'b5\'c3\'f7\'a3\'ba\par
+\tab\par
+
+\pard\sa200\sl240\slmult1\tab\cf0\fs22 1).\'d2\'fe\'ca\'bd\'c4\'da\'c1\'ac\'bd\'d3\'bc\'d3\'c8\'eb\'c6\'e4\'cb\'fc\'b2\'e9\'d1\'af\'cc\'f5\'bc\'fe\'a3\'ba\par
+\tab\tab select * from \'b1\'ed1 ,\'b1\'ed2 where \'b1\'ed1\'ba\'cd\'b1\'ed2\'b5\'c4\'b5\'c8\'d6\'b5\'b9\'d8\'cf\'b5 and ... or ...;\par
+
+\pard\cf3\fs24\tab\cf0\fs22 2).\'cf\'d4\'ca\'be\'c4\'da\'c1\'ac\'bd\'d3\'bc\'d3\'c8\'eb\'c6\'e4\'cb\'fc\'b2\'e9\'d1\'af\'cc\'f5\'bc\'fe\'a3\'ba\cf3\fs24\par
+\cf0\par
+
+\pard\sa200\sl240\slmult1\tab\tab\fs22 select * from \'b1\'ed1 INNER JOIN \'b1\'ed2 ON \'b1\'ed1\'ba\'cd\'b1\'ed2\'b5\'c4\'b5\'c8\'d6\'b5\'b9\'d8\'cf\'b5 where \'cc\'f5\tab\tab\tab\'bc\'fe;\par
+\cf3\fs28\'b6\'e0\'b1\'ed\'b2\'e9\'d1\'af_\'cd\'e2\'c1\'ac\'bd\'d3\par
+\tab\cf0\fs22 1).\'d7\'f3\'cd\'e2\'c1\'ac\'bd\'d3\'a3\'ba\'b2\'e9\'d1\'af\'bd\'e1\'b9\'fb\'a3\'ba\'d7\'f3\'b1\'ed\'b5\'c4\'cb\'f9\'d3\'d0\'bc\'c7\'c2\'bc\'a3\'ac\'d3\'d2\'b1\'ed\'b5\'c4\'b5\'c8\'d6\'b5\'bc\'c7\'c2\'bc\'a3\'bb\par
+\tab\tab\'b8\'f1\'ca\'bd\'a3\'baselect * from \'b1\'ed1 LEFT JOIN \'b1\'ed2 ON \'b1\'ed1\'ba\'cd\'b1\'ed2\'b5\'c4\'b5\'c8\'d6\'b5\'cc\'f5\'bc\'fe\'a3\'bb\par
+\tab 2).\'d3\'d2\'cd\'e2\'c1\'ac\'bd\'d3\'a3\'ba\'b2\'e9\'d1\'af\'bd\'e1\'b9\'fb\'a3\'ba\'d3\'d2\'b1\'ed\'b5\'c4\'cb\'f9\'d3\'d0\'bc\'c7\'c2\'bc\'a3\'ac\'d7\'f3\'b1\'ed\'b5\'c4\'b5\'c8\'d6\'b5\'bc\'c7\'c2\'bc\'a3\'bb\par
+\tab\tab\'b8\'f1\'ca\'bd\'a3\'baselect * from \'b1\'ed1 RIGHT JOIN \'b1\'ed2 ON \'b1\'ed1\'ba\'cd\'b1\'ed2\'b5\'c4\'b5\'c8\'d6\'b5\'cc\'f5\'bc\'fe\'a3\'bb\par
+\cf3\fs28\'b6\'e0\'b1\'ed\'b2\'e9\'d1\'af_\'b6\'e0\'b6\'d4\'b6\'e0\'b5\'c4\'c8\'fd\'b1\'ed\'c1\'aa\'b2\'e9\'a3\'ba\par
+\tab\cf0\fs22\'c4\'da\'c1\'ac\'bd\'d3-\'d2\'fe\'ca\'bd\par
+\tab\'b8\'f1\'ca\'bd\'a3\'ba select * from \'b1\'ed1 1\'a3\'ac\'b1\'ed2 2\'a3\'ac\'b1\'ed3 3 where 1.\'c1\'d01 = 2.\'c1\'d02 and \tab 2.\'c1\'d02.1 = 3.lie3;\par
+\tab\'c4\'da\'c1\'ac\'bd\'d3-\'cf\'d4\'ca\'be\par
+\tab\'b8\'f1\'ca\'bd\'a3\'baselect* from \'b1\'ed1 1 inner join \'b1\'ed2 2 on 1.\'c1\'d01 = 2.\'c1\'d02 inner join \tab\'b1\'ed3 3 on  2.\'c1\'d02.1 = 3.\'c1\'d03;\par
+\tab\'cd\'e2\'c1\'ac\'bd\'d3-\'d7\'f3\'c1\'ac\'bd\'d3\'a3\'ba\par
+\tab\'b8\'f1\'ca\'bd\'a3\'baselect * from \'b1\'ed1 1 left join \'b1\'ed2 2 on 1.\'c1\'d01 = 2.\'c1\'d02 left join \tab\'b1\'ed3 3 on 2.\'c1\'d02.1 = 3.\'c1\'d03;\par
+\tab\'cd\'e2\'c1\'ac\'bd\'d3-\'d3\'d2\'c1\'ac\'bd\'d3\'a3\'ba\par
+\tab select * from \'b1\'ed1 1 right join \'b1\'ed2 2 on 1.\'c1\'d01 = 2.\'c1\'d02 \tab right join \tab\'b1\'ed3 3 on 2.\'c1\'d02.1 = 3.\'c1\'d03;\par
+\cf3\fs28 07.\'d7\'d3\'b2\'e9\'d1\'af\'a3\'ba\cf0\fs22\par
+\tab 1).\'d0\'b4\'d4\'da\'c1\'ed\'d2\'bb\'b8\'f6\'b2\'e9\'d1\'af\'c4\'da\'b2\'bf\'b5\'c4\'b2\'e9\'d1\'af\'a3\'ac\'bd\'d0\'a3\'ba\'d7\'d3\'b2\'e9\'d1\'af\'a3\'bb\cf3\fs28\par
+\cf0\fs22\tab 2).\'d7\'d3\'b2\'e9\'d1\'af\'a3\'ac\'cd\'a8\'b3\'a3\'d7\'f7\'ce\'aa\'cd\'e2\'b2\'bf\'b2\'e9\'d1\'af\'b5\'c4\ldblquote\'b2\'e9\'d1\'af\'cc\'f5\'bc\'fe\rdblquote\'bb\'f2\'d5\'df\ldblquote\'d0\'e9\'c4\'e2\'b1\'ed\rdblquote\'a1\'a3\par
+
+\pard\fs24\tab\par
+\'d4\'bc\'ca\'f8 \'d6\'d6\'c0\'e0\par
+\tab\'ce\'a8\'d2\'bb\'d4\'bc\'ca\'f8\'a3\'bb\'d7\'d6\'b6\'ce\'b5\'c4\'d6\'b5\'b2\'bb\'c4\'dc\'d6\'d8\'b8\'b4\'a3\'ac\'d4\'ca\'d0\'ed\'b4\'e6\'d4\'da\'b6\'e0\'b8\'f6null\'a3\'bb\par
+\tab\tab\'b4\'b4\'bd\'a8\'b1\'ed\'ca\'be\'ca\'b1\'a3\'bb\'d2\'aa\'d4\'bc\'ca\'f8\'b5\'c4\'b6\'d4\'cf\'f3\'ba\'f3\'bc\'d3unique;\par
+\tab\tab\'ca\'b5\'c0\'fd stuNo char(5) unique,\par
+\tab   \'c9\'be\'b3\'fd\'ce\'a8\'d2\'bb\'d4\'bc\'ca\'f8\'a3\'baalter table \'b1\'ed\'c3\'fb drop \'d7\'d6\'b6\'ce\'c3\'fb\'a3\'bb\par
+\par
+\tab\'b7\'c7\'bf\'d5\'d4\'bc\'ca\'f8\'a3\'bb\'d7\'d6\'b6\'ce\'b5\'c4\'d6\'b5\'b2\'bb\'c4\'dc\'ca\'c7\'a3\'baNull\'a3\'ac\'bf\'c9\'d2\'d4\'d6\'d8\'b8\'b4\par
+\tab\tab\'b4\'b4\'bd\'a8\'b1\'ed\'ca\'b1\'a3\'ac\'d2\'aa\'d4\'bc\'ca\'f8\'b5\'c4\'b6\'d4\'cf\'f3\'ba\'f3\'bc\'d3 not null\'a3\'bb\par
+\tab\tab\'ca\'b5\'c0\'fd\'a3\'bastuName char(10) not null;\par
+\par
+\tab\'d6\'f7\'bc\'fc\'d4\'bc\'ca\'f8\'a3\'ba\'d7\'d6\'b6\'ce\'b5\'c4\'d6\'b5\'ca\'c7\ldblquote\'ca\'c7\'d6\'f7\'bc\'fc\rdblquote --\'b7\'c7\'bf\'d5\'a3\'ac\'ce\'a8\'d2\'bb\par
+\tab\tab\'b4\'b4\'bd\'a8\'b1\'ed\'ca\'b1\'a3\'ac\'cc\'ed\'bc\'d3\'d6\'f7\'bc\'fc\'ba\'f3 \'bc\'d3 primary key ;\par
+\tab\tab\'ca\'b5\'c0\'fd\'a3\'baid int primary key,\par
+\par
+\tab   \'c9\'be\'b3\'fd\'d6\'f7\'bc\'fc\'d4\'bc\'ca\'f8\'a3\'baalter table \'b1\'ed\'c3\'fb drop primary key;\par
+\par
+\tab\'d7\'d4\'b6\'af\'d4\'f6\'b3\'a4\'d4\'bc\'ca\'f8\'a3\'ba\'cd\'a8\'b3\'a3\'d3\'c3\'c0\'b4\'ce\'ac\'bb\'a4\'d7\'f7\'ce\'aaint\'c0\'e0\'d0\'cd\'b5\'c4\'d6\'f7\'bc\'fc\'d7\'d6\'b6\'ce\'b5\'c4\'d6\'b5\'a1\'a3\par
+\tab\tab\'b4\'b4\'bd\'a8\'b1\'ed\'ca\'b1\'a3\'ac\'cc\'ed\'bc\'d3int\'c0\'e0\'d0\'cd\'b5\'c4\'d6\'f7\'bc\'fc\'ba\'f3 \'bc\'d3 auto_increment,\par
+\par
+\tab\'c9\'e8\'d6\'c3\'d6\'f7\'bc\'fc\'d4\'bc\'ca\'f8\'a3\'baalter table \'b1\'ed\'c3\'fb auto_increment = 100;\par
+}
+ 
